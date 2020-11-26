@@ -8,12 +8,12 @@
 /* header */
 
 .menu{
-    background: #000;
+    background: transparent;
     padding: 20px 0;
 }
 
 .menu-container{
-    max-width: 960px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -47,16 +47,38 @@
     display: block;
     padding: 20px;
     text-decoration: none;
-    color: #fff;
+    color: rgb(228, 228, 228);
     text-transform: uppercase;
+    transition: .3s;
+}
+
+.menu-nav a:hover{
+    color: #bfa640;
 }
 
 /* intro */
 
 .intro{
-    background: url(img/img1.jpg) no-repeat center;
+    background: url(img/img100.jpg) no-repeat center;
     background-size: cover;
+    background-position: center;
+    background-clip: border-box;
     padding: 300px 0;
-    margin-top: -129px;
-
+    margin-top: -140px;
 }
+
+.intro-container{
+    text-align: center;
+    margin-right: 49em;
+    text-transform: uppercase;
+}
+
+.intro-container h1{
+    font-size: 2.75em;
+    color: rgb(228, 228, 228);
+}
+
+.intro-container strong{
+    color: #bfa640;
+}
+

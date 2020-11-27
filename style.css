@@ -122,8 +122,10 @@
 }
 
 .servico-container{
+    max-width: 1100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: auto;
 }
 
 .servico-container h1{
@@ -163,3 +165,42 @@
     color: #252525;
 }
 
+/* agendameto */
+
+.agendamento{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.agendamento-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.agendamento-container iframe{
+    padding: 40px 60px 60px 0;
+}
+
+.agendamento-item{
+    padding: 40px 0;
+}
+
+.agendamento-item h1{
+    font-size: 2.75em;
+    text-transform: uppercase;
+}
+
+.agendamento-item p{
+    font-size: 1.25em;
+    padding: 20px 0 80px 0;
+    color: #bfa640;
+}
+
+.agendamento-item a{
+    font-size: 1.55em;
+    padding: 20px 95px;
+    background: rgba(202, 223, 166, 1);
+    text-transform: uppercase;
+    color: #fff;
+}

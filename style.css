@@ -98,7 +98,7 @@
     grid-column: 1 / -1;
     text-align: center;
     font-size: 2.75em;
-    padding: 40px 0;
+    padding: 60px 0;
     text-transform: uppercase;
 }
 
@@ -112,3 +112,54 @@
     font-size: 1.25em;
     color: #252525;
 }
+
+/* serviço */
+
+.servico{
+    background: rgba(160, 160, 160, 0.103);
+    margin: 60px auto;
+    padding: 0 0 40px 0;
+}
+
+.servico-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.servico-container h1{
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2.75em;
+    padding: 60px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.servico-container p{
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #bfa640;
+    font-size: 1.25em;
+}
+
+.tabela{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.308);
+}
+
+.tabela1{
+    padding: 40px;
+}
+
+.tabela1 p{
+    padding: 10px 60px;
+}
+
+.tabela1 strong{
+    color: #252525;
+}
+

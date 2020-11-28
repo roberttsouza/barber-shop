@@ -137,6 +137,7 @@
 
     .intro{ 
         margin-top: -260px;
+        width: 103%;
     }
 }
 
@@ -195,6 +196,7 @@
     }
 
     .historia-container img{
+        max-width: 300px;
         margin: 40px auto;
     }
 
@@ -268,19 +270,26 @@
 
 @media(max-width:880px){
 
+    .servico{
+        width: 102%;
+    }
+    
     .servico-container{
         grid-template-columns: 1fr;
     }
 
     .tabela{
-        grid-template-columns: 1fr;
+        display: inline;
+        
     }
 
     .tabela1{
-        padding: 0 40px;
+        padding: 0 20px;
+       
     }
 
     .tabela1 p{
+         font-size: 1.10em;
         padding: 20px 0;
     }
     
@@ -353,18 +362,33 @@
         text-align: center;
     }
 
-    .agendamento-container{
+    .agendamento-container{ 
+        display: block;
         grid-template-columns: 1fr;
     }
 
     .agendamento-container iframe{
+        max-width: 300px;
         padding:0;
         margin: auto;
     }
 
     .agendamento-item{
-        position: relative;
+        
         padding: 40px 0;
+    }
+
+    .agendamento-item h1{
+        font-size: 2em;
+    }
+
+    .agendamento-item p{
+        font-size: 1.10em;
+    }
+
+    .agendamento-item a{
+        padding: 20px 5px;
+        font-size: 1.25em;
     }
     
 }
@@ -455,7 +479,15 @@
 }
 
 @media(max-width:880px){
+
+    .footer{
+        width: 103%;
+    }
     .footer-container{
         grid-template-columns: 1fr;
+    }
+
+    .criador{
+        width: 103%;
     }
 }

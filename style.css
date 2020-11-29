@@ -43,6 +43,7 @@
 
 .menu-nav li{
     display: inline-block;
+    padding: 20px 0;
 }
 
 .menu-nav a{
@@ -51,7 +52,6 @@
     text-decoration: none;
     color: rgb(228, 228, 228);
     text-transform: uppercase;
-    
     transition: .3s;
 }
 
@@ -67,6 +67,14 @@
 .menu-nav .menu-agendamento-btn:hover{
     background: rgba(202, 223, 166, 1);
     color: #000;
+}
+
+.menu-nav .closebtn{
+    display: none;
+}
+
+.menu-open{
+    display: none;
 }
 
 @media(max-width: 1150px){
@@ -106,6 +114,7 @@
     }
 
     .menu-open{
+        display: block;
         float: left;
         padding: 0 20px;
         color: #bfa640;
@@ -120,7 +129,8 @@
         transition: 0.3s;
     }
 
-    .closebtn {
+    .menu-nav .closebtn {
+        display: block;
         position: absolute;
         top: 0;
         right: 25px;
@@ -203,12 +213,13 @@
 }
 
 .historia-container img{
+    padding: 40px 0;
     max-width: 520px;
     border-radius: 6px;
 }
 
 .historia-container p{
-    padding: 0 0 0 60px;
+    padding: 40px 0 0 20px;
     font-size: 1.25em;
     color: #252525;
 }

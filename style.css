@@ -83,17 +83,57 @@
         margin: auto;
     }
 
+
+
     .menu-logo{
+       display: block;
+       padding: 0 10px;
+       float: right;
+    }
+    
+    .menu-nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+
+    }
+
+    .menu-open{
+        float: left;
+        padding: 0 20px;
+        color: #bfa640;
+    }
+
+    .menu-nav a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      .menu-nav .menu-agendamento-btn{
+        margin-top: 20px;
+        font-size: 1.25em;
         width: 100%;
     }
 
-    .menu-logo img{
-        text-align: center;
-    }
-
-    .menu-nav ul{
-        display: flex;
-    }
 
 }
 
@@ -158,7 +198,7 @@
     grid-column: 1 / -1;
     text-align: center;
     font-size: 2.75em;
-    padding: 60px 0;
+    padding: 60px 0 10px 0;
     text-transform: uppercase;
 }
 
@@ -278,6 +318,12 @@
         grid-template-columns: 1fr;
     }
 
+    .servico-container p{
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
     .tabela{
         display: inline;
         
@@ -289,7 +335,7 @@
     }
 
     .tabela1 p{
-         font-size: 1.10em;
+        font-size: 1.10em;
         padding: 20px 0;
     }
     
@@ -374,7 +420,6 @@
     }
 
     .agendamento-item{
-        
         padding: 40px 0;
     }
 
@@ -384,10 +429,12 @@
 
     .agendamento-item p{
         font-size: 1.10em;
+        max-width: 300px;
+        margin: auto;
     }
 
     .agendamento-item a{
-        padding: 20px 5px;
+        padding: 15px 10px;
         font-size: 1.25em;
     }
     

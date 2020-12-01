@@ -6,7 +6,7 @@
 ## Essa é a interface do modelo para desktop.
 # ![desktop](https://github.com/roberttsouza/barber-shop/blob/main/gits/desktop.gif)
 
- ### As tecnologias utilizadas pesse projeto foram
+ ### As tecnologias utilizadas nesse projeto foram
  * HTML
  * CSS
  * JAVASCRIPT

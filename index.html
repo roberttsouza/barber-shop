@@ -22,8 +22,8 @@
                     <li><a href="#">conceito</a></li>
                     <li><a href="#">serviço</a></li>
                     <li><a class="menu-agendamento-btn" href="#"><i class="fab fa-whatsapp"></i> agendamento</a></li>
-
-                        <label for="switch">
+                   
+                        <label for="switch" class="dark-mode-container">
                             <input type="checkbox" id="switch">
                         </label>
                         
@@ -136,25 +136,7 @@
 
 <!-- formatação js-->
 
-        <script>            
-        
-            const $html = document.querySelector('html')
-            const $checkbox = document.querySelector('#switch')
-
-            $checkbox.addEventListener('change', function() {
-                $html.classList.toggle('dark-mode')
-            })
-
-            function openNav() {
-              document.getElementById("my-menu-nav").style.width = "250px" ;
-            }
-            
-            function closeNav() {
-              document.getElementById("my-menu-nav").style.width = "0";
-            }
-
-
-        </script>
+<script src="formatacao.js"></script>
 
 
 </body>

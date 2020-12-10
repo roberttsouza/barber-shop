@@ -1,5 +1,9 @@
+/*variáveis Dark Mode*/
 :root{
     --body-gb: #fafafa;
+    --bg-dark-mode: #d3d2d2;
+    --btn-dark-mode:#292929;
+    --body-navbar:  #f2f2f2;
     --bady-bg-sec:rgba(160, 160, 160, 0.103);
     --body-color:#555;
     --body-color-p:#252525;
@@ -9,9 +13,11 @@
 }
 
 
-
 .dark-mode:root{
     --body-gb: #292929;
+    --bg-dark-mode: #292929;
+    --btn-dark-mode:#bfa640;
+    --body-navbar:  #1f1f1f;
     --bady-bg-sec:rgb(26, 26, 26);
     --body-color:rgb(180, 180, 180);
     --body-color-p:#dddddd;
@@ -20,7 +26,7 @@
     --link-color-hover:rgba(202, 223, 166, 1);
 }
 
-  
+
 *{
     padding: 0;
     margin: 0;
@@ -32,6 +38,61 @@
 body{
     background-color: var(--body-gb);
 }
+
+
+
+/*button Dark Mode*/
+
+.dark-mode-container{
+    margin: 0 0 0 20px;
+}
+
+#switch{
+    position: relative;
+    width: 50px;
+}
+
+#switch::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 25px;
+    background: var(--bg-dark-mode);
+    border-radius: 20px;
+}
+
+#switch:checked:before{
+    background: #555;
+}
+
+#switch::after{
+    content: '🌙';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: var(--btn-dark-mode);
+    border-radius: 20px;
+    transition: .25s;
+    border: 3px solid var(--btn-dark-mode);
+    box-sizing: border-box;
+}
+#switch:checked::after{
+    left: 25px;
+}
+
+@media(max-width:880px){
+    .dark-mode-container{
+        
+    }
+
+    #switch{
+        margin: 20px 30px;
+        float: right;
+    }
+}
+
+
 
 /* header */
 
@@ -128,13 +189,13 @@ body{
     }
     
     .menu-nav {
-        height: 100%;
+        height: 100vh;
         width: 0;
         position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background-color: var(--body-navbar);
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -152,7 +213,7 @@ body{
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        color: var(--link-color);
         display: block;
         transition: 0.3s;
     }

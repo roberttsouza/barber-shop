@@ -1,8 +1,36 @@
+:root{
+    --body-gb: #fafafa;
+    --bady-bg-sec:rgba(160, 160, 160, 0.103);
+    --body-color:#555;
+    --body-color-p:#252525;
+    --body-color-footer: #fff;
+    --link-color: #222;
+    --link-color-hover:rgba(202, 223, 166, 1);
+}
+
+
+
+.dark-mode:root{
+    --body-gb: #292929;
+    --bady-bg-sec:rgb(26, 26, 26);
+    --body-color:rgb(180, 180, 180);
+    --body-color-p:#dddddd;
+    --body-color-footer: #fff;
+    --link-color: rgb(223, 221, 221);
+    --link-color-hover:rgba(202, 223, 166, 1);
+}
+
+  
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+    background-color: var(--body-gb);
 }
 
 /* header */
@@ -210,6 +238,7 @@
     font-size: 2.75em;
     padding: 60px 0 10px 0;
     text-transform: uppercase;
+    color: var(--link-color);
 }
 
 .historia-container img{
@@ -221,7 +250,7 @@
 .historia-container p{
     padding: 40px 0 0 20px;
     font-size: 1.25em;
-    color: #252525;
+    color: var(--body-color-p);
 }
 
 @media(max-width:1150px){
@@ -261,7 +290,7 @@
 /* serviço */
 
 .servico{
-    background: rgba(160, 160, 160, 0.103);
+    background-color: var(--bady-bg-sec);
     margin: 60px auto;
     padding: 0 0 40px 0;
 }
@@ -279,6 +308,7 @@
     font-size: 2.75em;
     padding: 60px 0 10px 0;
     text-transform: uppercase;
+    color: var(--link-color);
 }
 
 .servico-container p{
@@ -293,7 +323,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 40px auto;
-    background: #ffffff;
+    background-color: var(--body-gb);
     border-radius: 6px;
     box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.308);
 }
@@ -307,7 +337,7 @@
 }
 
 .tabela1 strong{
-    color: #252525;
+    color: var(--body-color-p);
 }
 
 @media(max-width:1150px){
@@ -377,6 +407,7 @@
 .agendamento-item h1{
     font-size: 2.75em;
     text-transform: uppercase;
+    color: var(--link-color);
 }
 
 .agendamento-item p{
@@ -437,6 +468,7 @@
 
     .agendamento-item h1{
         font-size: 2em;
+        color: var(--link-color);
     }
 
     .agendamento-item p{
@@ -482,7 +514,7 @@
 .footer-item h1{
     font-size: 2.45em;
     padding: 0 0 20px 0;
-    color: #fff;
+    color: var(--body-color-footer);
     text-transform: uppercase;
 }
 
@@ -500,7 +532,7 @@
 .footer-social h1{
     font-size: 2.45em;
     padding: 0 0 20px 0;
-    color: #fff;
+    color: var(--body-color-footer);
     text-transform: uppercase;
 }
 
@@ -518,7 +550,7 @@
 .criador{
     display: grid;
     background: #000000;
-    color: #fff;
+    color: var(--body-color-footer);
 }
 
 .criador p{

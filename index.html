@@ -22,20 +22,16 @@
                     <li><a href="#">conceito</a></li>
                     <li><a href="#">serviço</a></li>
                     <li><a class="menu-agendamento-btn" href="#"><i class="fab fa-whatsapp"></i> agendamento</a></li>
+
+                        <label for="switch">
+                            <input type="checkbox" id="switch">
+                        </label>
+                        
                 </ul>
             </nav>
             <span class="menu-open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
 
-        <script>
-            function openNav() {
-              document.getElementById("my-menu-nav").style.width = "250px" ;
-            }
-            
-            function closeNav() {
-              document.getElementById("my-menu-nav").style.width = "0";
-            }
-            </script>
     </header>
 
     <main class="intro">
@@ -134,5 +130,32 @@
             <div class="criador">
                 <p>Desenvolvedor - <strong>Robertt souza</strong> - 2020</p>
             </div>
+
+
+            
+
+<!-- formatação js-->
+
+        <script>            
+        
+            const $html = document.querySelector('html')
+            const $checkbox = document.querySelector('#switch')
+
+            $checkbox.addEventListener('change', function() {
+                $html.classList.toggle('dark-mode')
+            })
+
+            function openNav() {
+              document.getElementById("my-menu-nav").style.width = "250px" ;
+            }
+            
+            function closeNav() {
+              document.getElementById("my-menu-nav").style.width = "0";
+            }
+
+
+        </script>
+
+
 </body>
 </html>
